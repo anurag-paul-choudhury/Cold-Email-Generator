@@ -11,7 +11,8 @@ Emails are enriched with relevant portfolio links retrieved from a vector databa
 - A company needs a software engineer and is spending time and resources in the hiring process.  
 - Your tool can generate a professional cold email for outreach to that company, including portfolio links or relevant information.
 
-![alt text](image.png)
+![Screenshot of the app](imgs/image.png)
+
 
 ## Features
 
@@ -25,37 +26,39 @@ Emails are enriched with relevant portfolio links retrieved from a vector databa
 
 ## Installation
 
-1. **Clone the repository**
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/anurag-paul-choudhury/Cold-Email-Generator.git
 cd Cold-Email-Generator
+```
 
-2. Create a virtual environment (recommended)
-
+**2. Create a virtual environment (recommended)**
+```bash
 python -m venv venv
+```
 
-3. Activate the environment
+**3. Activate the environment**
 
 - Windows:
-
+```bash
     venv\Scripts\activate
-
+```
 
 - macOS/Linux:
-
+```bash
     source venv/bin/activate
-
-4. Install dependencies
-
+```
+**4. Install dependencies**
+```bash
 pip install -r requirements.txt
-
-5. Setup API Key
+```
+**5. Setup API Key**
 
 Copy the template .env.example to .env:
-
+```bash
 cp .env.example .env
-
+```
 
 Open .env and add your Groq API key:
 
@@ -64,8 +67,10 @@ GROQ_API_KEY=your_api_key_here
 
 Note: Do not commit your .env file to GitHub. Use .env.example as a template.
 
-6. Run the Streamlit app
+**6. Run the Streamlit app**
+```bash
 streamlit run email_generator.ipynb
+```
 
 
 Open the URL displayed in your terminal (usually http://localhost:8501)
